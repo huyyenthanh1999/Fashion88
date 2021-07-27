@@ -1,0 +1,59 @@
+@font-face {
+    font-family: gothambold;
+    src: url('./fonts/gothamhtf-bold-webfont.ttf');
+}
+
+@font-face {
+    font-family:gothambook;
+    src: url('./fonts/gothamhtf-book-webfont.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --text-color:#333;
+    --white-color:#fff;
+    --black-color:#000;
+}
+
+html {
+    font-size:62.5%;
+    font-family: gothambook, sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.grid__col-half {
+    width:50%;
+    overflow-y: hidden;
+}
+
+.grid__col-2-4 {
+    width: 20%;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.box-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.7);
+}
